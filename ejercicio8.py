@@ -8,6 +8,8 @@ y mostrará si un nombre específico está en la lista."""
 
 print("Ingresa nombres, cuando termines escribi (fin):  ")
 v = "inicio"
+nombreBuscado = ""
+acum = 0
 nombres = []
 nombresA = []
 nombresE = []
@@ -27,5 +29,14 @@ for name in nombres:
     if name[0] == "E":
         nombresE.append(name)
 
+verificar = input("Busca un nombre: ")
+for name in nombres:
+    if name == verificar:
+        acum += 1
+        nombreBuscado = name
+        print(f"El nombre {nombreBuscado} está en la lista")
+
+if acum == 0:
+     print(f"El nombre {nombreBuscado} no está en la lista")
 
 print(f"Los nombres que ingresaste son: {nombres} \n Los que empiezan con A : {nombresA} \n Los que empiezan con E : {nombresE} ")
