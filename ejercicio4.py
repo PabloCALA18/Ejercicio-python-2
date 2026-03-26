@@ -6,7 +6,7 @@ inclusive una rebanada.
 
 palabra = input("Ingresa una palabra: ")
 
-print("Selecciona lo que querés hacer \n 1.Si queres la primera letra \n 2.Si querés la última letra \n 3.Si queres la palbra rebanada \n 4.Si querés desde un número")
+print("\n \n Selecciona lo que querés hacer \n 1.Si queres la primera letra \n 2.Si querés la última letra \n 3.Si queres la palabra rebanada \n 4.Si querés desde un número \n 5.Si querés hasta un número \n 6.Si queres un intervalo \n 7.Si querés toda la palabra \n 8.Si queres una letra en específico \n 9.Si querés la palabra al revés \n")
 n = int(input("Ingresa el número: "))
 
 if n == 1:
@@ -20,3 +20,17 @@ if n == 3:
 if n == 4:
     inicio = int(input("Ingresa el número de inicio: "))
     print(palabra[inicio:])
+if n == 5:
+    fin = int(input("Ingresa el número de fin: "))
+    print(palabra[:fin])
+if n == 6:
+    inicio = int(input("Ingresa el número de inicio: "))
+    fin = int(input("Ingresa el número de fin: "))
+    print(palabra[inicio:fin])
+if n == 7:
+    print(palabra)
+if n == 8:
+    pos = int(input("Ingresa el número de la letra que querés: "))
+    print(palabra[pos])
+if n == 9:
+    print(palabra[::-1])
